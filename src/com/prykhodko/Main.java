@@ -17,8 +17,14 @@ public class Main {
         maryna.setLife(10);
         System.out.println(maryna.toString());
         saveObject(maryna);
-        loadObject(maryna);
+        //loadObject(maryna);
         System.out.println(maryna);
+
+        System.out.println("=================");
+        ISaveable monster = new Monsters("Casper", 3, 1);
+        System.out.println(monster);
+        saveObject(monster);
+        loadObject(monster);
     }
 
     public static ArrayList<String> readValues() {
